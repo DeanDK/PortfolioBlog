@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running properly.
+> This is a Ruby on Rals 5 application that allows user to create their own protofolios
 
-Things you may want to cover:
+### Features 
 
-* Ruby version
+- Real time chat engine for comment
+- Blog
+- Portofolio
+- Drag and drop interface
 
-* System dependencies
+### Code Example
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```ruby
+def my_great_method
+puts"here it is"
+end
+```
