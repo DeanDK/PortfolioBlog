@@ -1,0 +1,2 @@
+class Portofolioo < ApplicationRecord
+end
