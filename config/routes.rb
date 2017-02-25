@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :portofolioos
-  
+  resources :portofolioos, except: [:show]
+  get 'portofolioo/:id', to: 'portofolioos#show', as: 'portofolioo_show'
   
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
