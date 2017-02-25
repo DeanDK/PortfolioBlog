@@ -11,4 +11,5 @@
   <p><%= portofolio_item.body %></p>
   <%= image_tag portofolio_item.thumb_image unless portofolio_item.thumb_image.nil? %>
   <%= link_to "Edit", edit_portofolioo_path(portofolio_item) %>
+   <%= link_to 'Delete', portofolioo_path(portofolio_item), method: :delete, data: { confirm: 'Are you sure?' } %>
 <% end %>

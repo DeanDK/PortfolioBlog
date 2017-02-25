@@ -39,4 +39,12 @@ end
  def show
     @portofolios_items = Portofolioo.find(params[:id])
  end
+ 
+ def destroy
+    @portofolios_items = Portofolioo.find(params[:id])
+    @portofolios_items.destroy
+    respond_to do |format|
+      format.html { redirect_to portofolioos_url, notice: 'Article was successfully destroyed ' }
+    end
+ end
 end
