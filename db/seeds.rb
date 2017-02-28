@@ -42,7 +42,6 @@ Portofolioo.create!(
   body: "BLALALALALALALALALALlalaallalalaalallalalalalalalalaalalalalalallalalalalalalalalalalalalalal",
    main_image: "http://placehold.it/600x400" ,
   thumb_image:"http://placehold.it/350x150" ,
-
   )
 end
 
