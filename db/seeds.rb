@@ -39,7 +39,9 @@ end
 Portofolioo.create!(
   title: "Portofolio title: #{portofolio_item}",
   subtitle: "Angular" ,
-  body: "BLALALALALALALALALALlalaallalalaalallalalalalalalalaalalalalalallalalalalalalalalalalalalalal" 
+  body: "BLALALALALALALALALALlalaallalalaalallalalalalalalalaalalalalalallalalalalalalalalalalalalalal",
+   main_image: "http://placehold.it/600x400" ,
+  thumb_image:"http://placehold.it/350x150" ,
 
   )
 end
