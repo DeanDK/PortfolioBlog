@@ -4,3 +4,10 @@
 
 <em><%= @portofolios_items.subtitle %></em>
 <p><%= @portofolios_items.body %></p>
+
+<h2>Technologies used</h2>
+
+<% @portofolios_items.technologies.each do |t| %>
+<p><%= t.name %></p>
+
+<% end %>
