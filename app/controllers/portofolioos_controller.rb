@@ -16,7 +16,7 @@ class PortofolioosController < ApplicationController
   end
   
    def create
-    @portofolios_items = Portofolioo.new(params.require(:portofolioo).permit(:title, :subtitle, :body, technologies_attributes: [:name]))
+    @portofolios_items = Portofolioo.new(portofolioo_params)
 
     respond_to do |format|
       if @portofolios_items.save
@@ -34,7 +34,7 @@ class PortofolioosController < ApplicationController
   def update
      @portofolios_items = Portofolioo.find(params[:id])
     respond_to do |format|
-      if @portofolios_items.update(params.require(:portofolioo).permit(:title, :subtitle, :body))
+      if @portofolios_items.update(portofolioo_params)
 
         format.html { redirect_to portofolioos_path, notice: 'Article was successfully updated.' }
       else
@@ -53,5 +53,13 @@ end
     respond_to do |format|
       format.html { redirect_to portofolioos_url, notice: 'Article was successfully destroyed ' }
     end
+ end
+ 
+ private
+ 
+ def portofolioo_params
+   params.require(:portofolioo).permit(:title, 
+                                      :subtitle, 
+                                       :body, technologies_attributes: [:name])
  end
 end
