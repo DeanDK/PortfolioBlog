@@ -29,6 +29,7 @@ class PortofolioosController < ApplicationController
   
   def edit
     @portofolios_items = Portofolioo.find(params[:id])
+       
   end
   
   def update
