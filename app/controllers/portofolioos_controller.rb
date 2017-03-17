@@ -1,4 +1,5 @@
 class PortofolioosController < ApplicationController
+  before_action :set_portofolioo_item, only: [:edit, :update, :show, :destroy]
   layout 'portofolioo'
   def index
     @portofolioos_items = Portofolioo.all
@@ -28,12 +29,10 @@ class PortofolioosController < ApplicationController
   end
   
   def edit
-    @portofolioos_items = Portofolioo.find(params[:id])
-       
+
   end
   
   def update
-     @portofolioos_items = Portofolioo.find(params[:id])
     respond_to do |format|
       if @portofolioos_items.update(portofolioo_params)
 
@@ -45,11 +44,10 @@ class PortofolioosController < ApplicationController
 end
 
  def show
-    @portofolioos_items = Portofolioo.find(params[:id])
+
  end
  
  def destroy
-    @portofolioos_items = Portofolioo.find(params[:id])
     @portofolioos_items.destroy
     respond_to do |format|
       format.html { redirect_to portofolioos_url, notice: 'Article was successfully destroyed ' }
@@ -63,4 +61,9 @@ end
                                       :subtitle, 
                                        :body, technologies_attributes: [:name])
  end
+ 
+ def set_portofolioo_item
+     @portofolioos_items = Portofolioo.find(params[:id])
+ end
+ 
 end
