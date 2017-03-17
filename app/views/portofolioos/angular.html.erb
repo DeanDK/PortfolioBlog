@@ -1,7 +1,7 @@
 
 <h1>Angular Portofolio Items</h1>
 
-<%= link_to "Create a new item", new_portofolioo_path %>
+<%= link_to "Create a new item", new_portofolioo_path if logged_in?(:site_admin) %>
 
 
 
@@ -10,6 +10,6 @@
   <p><%= portofolio_item.subtitle %></p>
   <p><%= portofolio_item.body %></p>
   <%= image_tag portofolio_item.thumb_image unless portofolio_item.thumb_image.nil? %>
-  <%= link_to "Edit", edit_portofolioo_path(portofolio_item) %>
-   <%= link_to 'Delete', portofolioo_path(portofolio_item), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= link_to "Edit", edit_portofolioo_path(portofolio_item) if logged_in?(:site_admin) %>
+   <%= link_to 'Delete', portofolioo_path(portofolio_item), method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %>
 <% end %>

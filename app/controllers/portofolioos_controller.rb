@@ -1,6 +1,8 @@
 class PortofolioosController < ApplicationController
   before_action :set_portofolioo_item, only: [:edit, :update, :show, :destroy]
   layout 'portofolioo'
+    access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+    
   def index
     @portofolioos_items = Portofolioo.all
   end
