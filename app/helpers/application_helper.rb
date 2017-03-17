@@ -16,4 +16,8 @@ def login_helper
      content_tag(:p, greeting, class: "source-greeting" )
      end 
   end
+  
+  def copyright_generator
+     @copyright = DeanBozicTool::Renderer.copyright 'Dean Bozic', "All rights reserved"
+  end
 end
