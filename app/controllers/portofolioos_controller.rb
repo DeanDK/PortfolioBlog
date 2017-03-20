@@ -4,7 +4,7 @@ class PortofolioosController < ApplicationController
     access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
     
   def index
-    @portofolioos_items = Portofolioo.all
+    @portofolioos_items = Portofolioo.by_position
   end
   
   def angular
