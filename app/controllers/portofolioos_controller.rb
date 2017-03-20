@@ -68,7 +68,9 @@ end
  def portofolioo_params
    params.require(:portofolioo).permit(:title, 
                                       :subtitle, 
-                                       :body, technologies_attributes: [:name])
+                                       :body, :main_image,
+                                       :thumb_image,
+                                       technologies_attributes: [:name])
  end
  
  def set_portofolioo_item
