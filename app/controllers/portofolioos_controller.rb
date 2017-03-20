@@ -7,6 +7,13 @@ class PortofolioosController < ApplicationController
     @portofolioos_items = Portofolioo.by_position
   end
   
+  def sort
+    params[:order].each do |key, value|
+      Portofolioo.find(value[:id]).update(position: value[:position])
+    end
+    render nothing: true
+  end
+  
   def angular
      @angulars = Portofolioo.angular
   end
