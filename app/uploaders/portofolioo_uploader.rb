@@ -1,6 +1,6 @@
 class PortofoliooUploader < CarrierWave::Uploader::Base
 
-  storage :file
+  storage :aws
   # storage :fog
 
   def store_dir
