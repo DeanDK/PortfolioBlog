@@ -1,7 +1,7 @@
 <%= form_for(@portofolioos_items) do |f| %>
  <% if @portofolioos_items.errors.any? %>
     <% @portofolioos_items.errors.full_messages.each do |error| %>
-      <%= js add_gritter(error, title: "Dean Bozic Portfolio", sticky: false) %>
+      <%= alert_generator error%>
     <% end %>
   <% end %>
   
