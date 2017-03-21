@@ -11,5 +11,6 @@ Bundler.require(*Rails.groups)
 
 module BlogAndPort
   class Application < Rails::Application
+  
   end
 end
