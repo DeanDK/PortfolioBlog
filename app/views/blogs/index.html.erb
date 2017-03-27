@@ -1,6 +1,7 @@
 <div class="col-sm-8 blog-main">
   
-    <%= paginate @blogs %>
+    <%= paginate @blogs %>  <%# Pagionation, part of 'Kaminari' gem is used for listing 
+                             blog pages. In this case, "Newer", "Older"%>
 
     <%= render @blogs %>
 
