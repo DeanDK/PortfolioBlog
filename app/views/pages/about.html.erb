@@ -6,7 +6,7 @@
 
     <div class="row">
       <div class="col-md-4">
-        <%= image_tag "dean.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+        <%= image_tag "profile.png", width: 300, alt: "profile image", class: 'profile-img' %>
         <div class="skills">
           <% @skills.each do |skill| %>
             <div class="skill">
@@ -26,11 +26,13 @@
       </div>
 
       <div class="col-md-8">
-        <p>With over a decade of development experience in a number of industries I realized that the typical product creation process between clients and developers was flawed. All too often developers rarely communicate to clients throughout the development stage, resulting in a final product that fails to reach the goal sought by the customer and end user.</p>
-
-        <p>For this reason I decided to utilize a completely different development pattern that focuses on highly focused communication and transparent design patterns. When I take on a project not only do I work to craft the application according to the client's specifications, I give daily updates to ensure that the project is aligning properly with the client's goals. The end result is the right product, delivered on time, and on budget.</p>
-
-        <p>
+        <p>I am a Croat (20) who was born and raised in Bosnia & Herzegovina. Apart from being a software developer, I enjoy following penny stocks, watching tv shows 
+        and all kinds of sports. You'll mostly find me spending my time with the my family and friends I love. </p>
+        
+        <p>Having in mind education, I am specialized as a Cross Media student, or more concretely, as a software developer. I'm currently attending
+        4h semester at VIA University College in Denmark.</p>
+       
+       
           <button
             class="btn btn-primary"
             type="button"
@@ -39,7 +41,31 @@
             aria-expanded="false"
             aria-controler="jobHistory"
           >
-            Job History
+            Other skills 
+          </button>
+          
+            <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#languages"
+            aria-expanded="false"
+            aria-controler="languages"
+          >
+           Languages
+          </button>
+          
+          </button>
+          
+            <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#certificate"
+            aria-expanded="false"
+            aria-controler="certificate"
+          >
+          Certificates
           </button>
 
           <button
@@ -57,22 +83,50 @@
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              Job 1
+              .NET Programming
             </div>
             <div class="card card-block">
-              Job 2
+              Android application development
+            </div>
+             <div class="card card-block">
+             HTML5, CSS3, Bootstrap, XML
+            </div>
+              <div class="card card-block">
+            Javascript & JQuery
+            </div>
+          </div>
+          
+           <div class="collapse" id="certificate">
+            <div class="card card-block">
+              Ruby on Rails 5 Certificate | signed by Jordan Hudgens
+            </div>
+            <div class="card card-block">
+              Cyber Security Certificate | signed by Nathan House
+            </div>
+          </div>
+          
+           <div class="collapse" id="languages">
+            <div class="card card-block">
+              English
+            </div>
+            <div class="card card-block">
+             Croatian
+            </div>
+             <div class="card card-block">
+             Bosnian
+            </div>
+              <div class="card card-block">
+             Serbian
+            </div>
+              <div class="card card-block">
+             Danish (basic)
             </div>
           </div>
 
           <div class="collapse" id="education">
             <div class="card card-block">
-              School 1
-            </div>
-            <div class="card card-block">
-              School 2
-            </div>
-            <div class="card card-block">
-              School 3
+             VIA University College
+             <p>Bachelor of Information and Communication Technology - ICT</p>
             </div>
           </div>
         </p>

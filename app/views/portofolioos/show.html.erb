@@ -23,6 +23,7 @@
       <% if logged_in?(:site_admin) %>
         <div class="">
           <%= link_to "Edit Item", edit_portofolioo_path(@portofolioos_items), class: 'btn btn-warning' %>
+            <%= link_to "Delete", (@portofolioos_items), method: :delete, data: {confirm: "Are you sure? "}  %>
         </div>
       <% end %>
     </div>

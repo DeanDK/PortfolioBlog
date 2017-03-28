@@ -30,7 +30,17 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Lato', sans-serif;
 
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
 }
 body {
   color: #fff;
@@ -223,9 +233,6 @@ body {
   text-align: left;
 }
 
-.app-card-container >.card{
-  
-}
 
 .profile-img{
   border: 1px solid grey;
@@ -235,7 +242,7 @@ body {
 
   
 .app-card-container a{
-  color:black;
+  color:blue;
   
 }
 
@@ -262,3 +269,4 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
